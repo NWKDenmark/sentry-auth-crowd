@@ -3,14 +3,16 @@ Crowd Auth Backend for Sentry
 
 A Crowd authentication backend for Sentry.
 
-Succesfully applied with Sentry 21.9.0.
+Original code written by TRBS. All credits go to him.
+
+Succesfully updated and applied to Sentry 21.9.0 by NWK.
 
 Install
 -------
 
 .. code-block:: console
 
-    $ pip install sentry-auth-crowd
+    $ pip install sentry-auth-crowd-NWK
 
 If you are using `getsentry/onpremise`_ to install sentry, just add `sentry-auth-crowd` in getsentry/onpremise/requirements.txt .
 
@@ -50,8 +52,3 @@ now enjoy it!
 
 .. _getsentry/onpremise: https://github.com/getsentry/onpremise 
 
-SSO Support
------------
-
-sentry-auth-crowd current does not support the SSO authproviders from Sentry.
-We are happy to accept PR's to add support for this.
