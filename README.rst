@@ -14,7 +14,7 @@ Install
 
     $ pip install sentry-auth-crowd-NWK
 
-If you are using `getsentry/onpremise`_ to install sentry, just add `sentry-auth-crowd` in getsentry/onpremise/requirements.txt .
+If you are using `getsentry/onpremise`_ to install sentry, just add `sentry-auth-crowd-NWK` in getsentry/onpremise/requirements.txt .
 
 Setup
 -----
