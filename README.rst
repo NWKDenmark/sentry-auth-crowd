@@ -3,6 +3,7 @@ Crowd Auth Backend for Sentry
 
 A Crowd authentication backend for Sentry.
 
+Succesfully applied with Sentry 21.9.0.
 
 Install
 -------
@@ -20,6 +21,7 @@ In Atlassian Crowd create an application for Sentry we will need the
 application name and password for the Sentry configuration.
 
 Make sure the remote addresses are set correct to avoid authentication failures.
+E.g. remember to add localhost to Remote adresses if Crowd server runs a reverse proxy.
 
 The following settings should be set in ``sentry.conf.py``:
 
@@ -31,16 +33,14 @@ The following settings should be set in ``sentry.conf.py``:
     CROWD_APP_NAME = ""
     # The application password of Sentry in Crowd
     CROWD_APP_PASSWORD = ""
-    # The team slugs a new user should automatically be member of.
-    CROWD_DEFAULT_TEAM_SLUGS = []
     # Put this after AUTHENTICATION_BACKENDS declaration, if it not exists, just set
     AUTHENTICATION_BACKENDS = AUTHENTICATION_BACKENDS + (
         'sentry_auth_crowd.backend.SentryCrowdBackend',
     )
     
-If you are using `getsentry/onpremise`_ to install sentry, after done above, remember to rerun 
+If you are using `getsentry/onpremise`_ to install sentry, after done above, remember to rerun install script
 
-*docker-compose build* 
+*./install.sh* 
 
 then 
 
