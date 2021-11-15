@@ -22,8 +22,8 @@ tests_require = [
 setup(
     name='sentry-auth-crowd-NWK',
     version='0.7.0',
-    author=['Bas van Oostveen', 'NWK'],
-    author_email=['trbs@trbs.net', 'NWKDenmark@protonmail.com'],
+    author='NWK',
+    author_email='NWKDenmark@protonmail.com',
     url='https://github.com/NWKDenmark/sentry-auth-crowd',
     description='Crowd authentication provider for Sentry',
     long_description=__doc__,
